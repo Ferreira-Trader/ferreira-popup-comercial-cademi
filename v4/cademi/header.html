@@ -1,18 +1,22 @@
 <style>
 /* ===== POPUP OVERLAY ===== */
 .wpp-popup-overlay {
-  position: fixed;
-  inset: 0;
+  position: fixed !important;
+  inset: 0 !important;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  z-index: 99999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 99999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s ease, visibility 0.4s ease;
+  width: 100vw !important;
+  height: 100vh !important;
+  top: 0 !important;
+  left: 0 !important;
 }
 
 .wpp-popup-overlay.active {
@@ -188,9 +192,9 @@
 
 /* ===== FLOATING ACTION BUTTON ===== */
 .wpp-fab {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 24px !important;
   width: 60px;
   height: 60px;
   background: #25D366;
@@ -198,7 +202,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99998;
+  z-index: 99998 !important;
   cursor: pointer;
   text-decoration: none;
   box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
@@ -228,9 +232,9 @@
 
 /* ===== FAB LABEL ===== */
 .wpp-fab-label {
-  position: fixed;
-  bottom: 36px;
-  right: 92px;
+  position: fixed !important;
+  bottom: 36px !important;
+  right: 92px !important;
   background: #111318;
   border: 1px solid rgba(0, 224, 255, 0.15);
   color: #fff;
